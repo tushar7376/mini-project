@@ -6,7 +6,7 @@ function App() {
   // This is the entire "frontend logic" for this mini project.
   // Clicking the button calls the Spring Boot backend and shows what it returns.
   const fetchMessage = async () => {
-    const response = await fetch("http://localhost:8080/api/hello");
+    const response = await fetch("https://mini-project-gcq6.onrender.com/api/hello");
     const text = await response.text();
     setMessage(text);
   };

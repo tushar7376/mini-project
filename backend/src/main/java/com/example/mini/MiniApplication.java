@@ -17,7 +17,7 @@ public class MiniApplication {
 // This is the entire "backend logic" for this mini project.
 // One endpoint: GET /api/hello -> returns a message.
 @RestController
-@CrossOrigin(origins = "*") // allows React (different port) to call this
+@CrossOrigin(origins = "https://mini-frontend-qs6v.onrender.com")// allows React (different port) to call this
 class HelloController {
 
     @GetMapping("/api/hello")
